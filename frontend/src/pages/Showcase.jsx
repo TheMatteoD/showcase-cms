@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
+import ProjectCard from '../components/ProjectCard';
 
 export default function Showcase() {
     const [projects, setProjects] = useState([]);
+    const [currentIndex, setCurrentIndex] = useState(0);
 
     const mockProjects = [
         {
@@ -31,13 +33,7 @@ export default function Showcase() {
 
 
         {projects.length > 0 && (
-        <div>
-            <h2>{projects[0].title}</h2>
-            <p>{projects[0].description}</p>
-            <ul>
-            {projects[0].tags.map(tag => <li key={tag}>{tag}</li>)}
-            </ul>
-        </div>
+            <ProjectCard project={projects[currentIndex]} />
         )}
 
       </>  
