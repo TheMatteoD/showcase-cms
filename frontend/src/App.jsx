@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Showcase from './pages/Showcase';
 import Archive from './pages/Archive';
 import AboutMe from './pages/AboutMe';
+import ProjectDetails from './pages/ProjectDetails';
 
 function App() {
   return (
@@ -13,7 +14,10 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Showcase/>} />
+          
           <Route path="/archive" element={<Archive />}/>
+          <Route path="/archive/:projectId" element={<ProjectDetails />} />
+
           <Route path="/about-me" element={<AboutMe />} />
         </Routes>
       </Router>
