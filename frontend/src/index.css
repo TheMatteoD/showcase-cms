@@ -26,6 +26,24 @@ code {
     monospace;
 }
 
+.arrow-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #FAA968;
+}
+
+.arrow-button:hover {
+  color: #F85525;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .page-container {
   display: flex;
   flex-direction: column;
