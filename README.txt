@@ -1,0 +1,1 @@
+A simple PHP and React app for showcasing projects. 
