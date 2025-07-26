@@ -1,47 +1,11 @@
 import { useState, useEffect } from 'react';
 import ProjectCard from '../components/ProjectCard';
+import mockProjects from '../data/mockProjects';
 
 export default function Showcase() {
     const [projects, setProjects] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const mockProjects = [
-        {
-            id: "1",
-            title: "Project 1",
-            description: "Project 1's description.",
-            image: null,
-            tags: ["Python", "Flask", "React"]
-        },
-        {
-            id: "2",
-            title: "Project 2",
-            description: "Project 2's description",
-            image: null,
-            tags: ["C#", ".Net", "Angular"]
-        },
-        {
-            id: "3",
-            title: "Project 3",
-            description: "Project 3's description",
-            image: null,
-            tags: undefined
-        },
-        {
-            id: "4",
-            title: "Project 4",
-            description: "Project 4's description",
-            image: null,
-            tags: undefined
-        },
-        {
-            id: "5",
-            title: "Project 5",
-            description: "Project 5's description",
-            image: null,
-            tags: undefined
-        }
-    ];
 
     function goToPrevious() {
         setCurrentIndex((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
