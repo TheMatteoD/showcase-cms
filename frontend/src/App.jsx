@@ -7,7 +7,7 @@ import AboutMe from './pages/AboutMe';
 
 function App() {
   return (
-    <div>
+    <div className='page-container'>
       <Router>
         <Navbar />
 

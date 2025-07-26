@@ -13,7 +13,6 @@ body {
 
 nav {
   background-color: #01204E;
-  text-align: center;
 }
 
 nav a {
@@ -25,6 +24,12 @@ nav a {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
