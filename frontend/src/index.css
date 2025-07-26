@@ -11,6 +11,7 @@ body {
   color: #F6DCAC;
 }
 
+
 nav {
   background-color: #01204E;
 }
@@ -24,6 +25,11 @@ nav a {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.archive-list{
+  color: #F6DCAC;
+  text-decoration: underline;
 }
 
 .arrow-button {

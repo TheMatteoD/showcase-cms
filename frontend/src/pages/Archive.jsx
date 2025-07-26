@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import mockProjects from '../data/mockProjects';
+import { Link } from 'react-router-dom'
 
 export default function Archive() {
     const [projets, setProjects] = useState([]);
@@ -13,7 +14,7 @@ export default function Archive() {
         <h1>Archive Page</h1>
         {projets.length > 0 &&(
         <ul>
-            {projets.map(project => <li key={project.id}>{project.title}</li>)}
+            {projets.map(project => <li key={project.id}><Link className="archive-list" to={`/archive/${project.id}`}>{project.title}</Link></li>)}
         </ul>
         )}
       </>  
