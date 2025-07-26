@@ -6,7 +6,7 @@ export default function ProjectCard({ project }) {
             <h2>{project.title}</h2>
             <p>{project.description}</p>
             <ul>
-                {project.tags.map(tag => <li key={tag}>{tag}</li>)}
+                {project.tags?.map(tag => <li key={tag}>{tag}</li>)}
             </ul>
         </div>
     );
