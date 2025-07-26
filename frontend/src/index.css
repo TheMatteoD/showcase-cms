@@ -5,9 +5,32 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+
+  background-color: #01204E;
+  color: #F6DCAC;
+}
+
+nav {
+  background-color: #01204E;
+  text-align: center;
+}
+
+nav a {
+  color: #FAA968;
+  text-decoration: none;
+  margin: 0 7.5em;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* 
+01204E
+028391
+F6DCAC
+FAA968
+F85525 */
