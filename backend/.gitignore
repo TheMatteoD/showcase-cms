@@ -1,3 +1,4 @@
 .env
 vendor/
 data/showcase.db
+data/showcase.db-journal
