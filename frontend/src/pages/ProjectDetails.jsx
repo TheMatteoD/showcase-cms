@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import mockProjects from '../data/mockProjects';
 
 export default function ProjectDetails() {
     const { projectId } = useParams();
@@ -8,7 +7,10 @@ export default function ProjectDetails() {
 
     
     useEffect(() => {
-        setProject(mockProjects.find(p => p.id === projectId));
+        fetch(`${process.env.REACT_APP_API_BASE_URL}/api/get-project.php?id=${projectId}`)
+            .then(res => res.json())
+            .then(data => setProject(data))
+            .catch(err => console.error(err));
     }, []);
 
 
