@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import ProjectCard from '../components/ProjectCard';
-import mockProjects from '../data/mockProjects';
 
 export default function Showcase() {
     const [projects, setProjects] = useState([]);
@@ -16,7 +15,10 @@ export default function Showcase() {
     }
 
     useEffect(() => {
-        setProjects(mockProjects); 
+        fetch(`${process.env.REACT_APP_API_BASE_URL}/api/get-projects.php`)
+        .then(res => res.json())
+        .then(data => setProjects(data))
+        .catch(err => console.error(err));
     }, []);
 
 

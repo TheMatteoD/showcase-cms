@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
-import mockProjects from '../data/mockProjects';
 import { Link } from 'react-router-dom'
 
 export default function Archive() {
     const [projets, setProjects] = useState([]);
 
     useEffect(() => {
-        setProjects(mockProjects);
+      fetch(`${process.env.REACT_APP_API_BASE_URL}/api/get-projects.php`)
+        .then(res => res.json())
+        .then(data => setProjects(data))
+        .catch(err => console.error(err));
     }, []);
 
     return (
