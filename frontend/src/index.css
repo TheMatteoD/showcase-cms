@@ -71,9 +71,9 @@ a:hover {
   z-index: 110;
 }
 
-/* .navigation_logo {
+.navigation_logo {
   display: flex;
-} */
+}
 
 .navigation_menu {
   display: flex;
@@ -102,7 +102,7 @@ a:hover {
   white-space: nowrap;
   padding: 0.35rem 0.75rem;
   border-radius: 4px;
-  color: var(--secondary);
+  color: var(--background);
   width: 100%;
 }
 
