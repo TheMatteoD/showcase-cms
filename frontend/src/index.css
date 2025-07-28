@@ -43,16 +43,139 @@ a:hover {
 }
 
 /* Navbar | started from a corelayout.com component: Copyright (c) 2023 DisclosedCode https://www.corelayout.com/components/navbars.html*/
-nav {
+.header_navigation {
+  position: fixed;
   background-color: var(--primary);
-  text-align: center;
-  min-width: 33%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: var(--accent) 0 3px 10px;
 }
 
-nav a{
-  color: var(--background);
-  padding: 25px;
+.navigation_bar {
+  padding: var(--main-side-padding);
+  height: 3.5rem;
+
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.navigation_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 110;
+}
+
+/* .navigation_logo {
+  display: flex;
+} */
+
+.navigation_menu {
+  display: flex;
+  align-items: center;
+}
+
+.navigation_list {
+  padding: 0;
+  order: 0;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 1rem;
+}
+
+.navigation_item {
+  width: 100%;
+}
+
+.navigation_link {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  align-items: center;
+  white-space: nowrap;
+  padding: 0.35rem 0.75rem;
+  border-radius: 4px;
+  color: var(--secondary);
+  width: 100%;
+}
+
+.navigation_link:hover {
+  color: var(--text);
+  background-color:var(--secondary);
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+    position: absolute;
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.navigation_extras {
+    display: flex;
+    align-items: center;
+    color: var(--accent);
+    z-index: 110;
+    order: 1;
+}
+
+
+#navigation_toggle ~ .navigation_extras label .navigation_close,
+#navigation_toggle ~ .navigation_extras label .navigation_open {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+
+    .navigation_extras {
+        column-gap: 1rem;
+    }
+
+    #navigation_toggle:checked ~ .navigation_extras label,
+    #navigation_toggle:not(:checked) ~ .navigation_extras label {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .navigation_list {
+        position: fixed;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 250px;
+        height: 100%;
+        top: 0;
+        right: -100%;
+        padding: 4rem 0 1rem 0;
+        row-gap: 1rem;
+        transition: .3s;
+        background-color: var(--primary);
+        box-shadow: var(--accent) 0 3px 10px;
+    }
+
+    .navigation_list .navigation_link {
+        padding: 0.60rem 1.5rem;
+        border-radius: unset;
+    }
+
+    #navigation_toggle:checked ~ .navigation_list {
+        right: 0;
+    }
+
+    #navigation_toggle:not(:checked) ~ .navigation_extras label .navigation_open,
+    #navigation_toggle:checked ~ .navigation_extras label .navigation_close {
+        display: flex;
+    }
+
+}
+
 
 /* Layout helpers */
 .page-container {
