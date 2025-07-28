@@ -1,5 +1,8 @@
+/* CSS for some UI elements has been adapted from components shared online, licensed under the MIT License. */
+
 :root {
   --background: #01204E;
+  --opacity-layer: #181818;
   --text: #F6DCAC;
   --primary: #FAA968;
   --secondary: #028391;
@@ -39,8 +42,9 @@ a:hover {
   color: var(--accent);
 }
 
+/* Navbar | started from a corelayout.com component: Copyright (c) 2023 DisclosedCode https://www.corelayout.com/components/navbars.html*/
 nav {
-  background-color: var(--secondary);
+  background-color: var(--primary);
   text-align: center;
   min-width: 33%;
 }
@@ -58,17 +62,36 @@ nav a{
   padding: 2em;
 }
 
-/* Project Card */
+/* Project Card | started from a Uiverse.io component : Copyright - 2025 alexruix (Alex Ruiz) https://uiverse.io/alexruix/heavy-elephant-39 */ 
 .project-card {
-  border: 5px solid var(--secondary);
-  border-radius: 25px;
-  padding: 2em;
-  max-width: 33%;
-  text-align: center;
+ --background: linear-gradient(to left, var(--secondary) 0%, var(--primary) 100%);
+ min-width: 33%;
+ margin-top: 20rem;
+ padding: 5px;
+ border-radius: 1rem;
+ overflow: visible;
+ background: var(--primary);
+ background: var(--background);
+ position: relative;
+ z-index: 1;
 }
 
-.project-card h2 {
-  color: var(--secondary);
+.project-card-info {
+ --color: #01204E;
+ background: var(--color);
+ color: var(--text);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ height: 100%;
+ overflow: visible;
+ border-radius: 2rem;
+}
+
+.pront-card h2 {
+ font-weight: bold;
+ letter-spacing: .1em;
 }
 
 /* Carousel */

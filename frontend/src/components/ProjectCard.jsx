@@ -3,11 +3,13 @@ export default function ProjectCard({ project }) {
 
     return (
         <div className="project-card">
-            <h2>{project.title}</h2>
-            <p>{project.description}</p>
-            <ul>
-                {project.tags?.map(tag => <li key={tag}>{tag}</li>)}
-            </ul>
+            <div className="project-card-info">
+                <h2>{project.title}</h2>
+                <p>{project.description}</p>
+                <ul>
+                    {project.tags?.map(tag => <li key={tag}>{tag}</li>)}
+                </ul>
+            </div>
         </div>
     );
 }
