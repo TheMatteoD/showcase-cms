@@ -2,7 +2,7 @@ export default function ProjectCard({ project }) {
     if (!project) return null;
 
     return (
-        <div>
+        <div className="project-card">
             <h2>{project.title}</h2>
             <p>{project.description}</p>
             <ul>

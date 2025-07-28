@@ -1,35 +1,82 @@
+:root {
+  --background: #01204E;
+  --text: #F6DCAC;
+  --primary: #FAA968;
+  --secondary: #028391;
+  --accent: #F85525;
+}
+
+
+/* Base styles */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  background-color: var(--background);
+  color: var(--text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-
-  background-color: #01204E;
-  color: #F6DCAC;
 }
 
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--accent);
+  margin-bottom: 0.5em;
+}
+
+p {
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent);
+}
 
 nav {
-  background-color: #01204E;
+  background-color: var(--secondary);
+  text-align: center;
+  min-width: 33%;
 }
 
-nav a {
-  color: #FAA968;
-  text-decoration: none;
-  margin: 0 7.5em;
+nav a{
+  color: var(--background);
+  padding: 25px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Layout helpers */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
 }
 
-.archive-list{
-  color: #F6DCAC;
-  text-decoration: underline;
+/* Project Card */
+.project-card {
+  border: 5px solid var(--secondary);
+  border-radius: 25px;
+  padding: 2em;
+  max-width: 33%;
+  text-align: center;
+}
+
+.project-card h2 {
+  color: var(--secondary);
+}
+
+/* Carousel */
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
 }
 
 .arrow-button {
@@ -37,29 +84,14 @@ code {
   border: none;
   font-size: 2rem;
   cursor: pointer;
-  color: #FAA968;
+  color: var(--primary);
 }
 
 .arrow-button:hover {
-  color: #F85525;
+  color: var(--accent);
 }
 
-.carousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Archive link list */
+.archive-list {
+  text-decoration: underline;
 }
-
-.page-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-/* 
-01204E
-028391
-F6DCAC
-FAA968
-F85525 */
