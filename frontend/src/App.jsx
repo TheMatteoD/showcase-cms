@@ -20,6 +20,11 @@ function App() {
 
           <Route path="/about-me" element={<AboutMe />} />
         </Routes>
+
+        <footer className="app-footer">
+  | 2025 Matteo DeSimone | Built using React, PHP, & SQLite |
+        </footer>
+
       </Router>
     </div>
   );
