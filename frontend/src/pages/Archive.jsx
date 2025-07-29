@@ -12,13 +12,13 @@ export default function Archive() {
     }, []);
 
     return (
-      <>
+      <div className="page-container">
         <h1>Archive Page</h1>
         {projets.length > 0 &&(
         <ul>
             {projets.map(project => <li key={project.id}><Link className="archive-list" to={`/archive/${project.id}`}>{project.title}</Link></li>)}
         </ul>
         )}
-      </>  
+      </ div>  
     );
 }

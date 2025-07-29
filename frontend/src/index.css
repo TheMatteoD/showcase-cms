@@ -24,6 +24,7 @@ h1{
   font-family: "Kode Mono", monospace;
   color: var(--accent);
   margin-bottom: 0.5em;
+  font-size: 2.5rem;
 }
 
 h2, h3, h4, h5, h6 {
@@ -275,6 +276,27 @@ a:hover {
 /* Archive link list */
 .archive-list {
   text-decoration: underline;
+}
+
+/* Project Details */
+.project-info-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 900px;
+}
+
+.project-short-desc,
+.project-tags-section {
+  flex: 1 1 300px;
+}
+
+.project-description {
+  max-width: 900px;
+  text-align: left;
 }
 
 /* About Me */
