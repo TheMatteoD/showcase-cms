@@ -4,7 +4,7 @@ export default function ProjectCard({ project }) {
     return (
         <div className="project-card">
             <div className="project-card-info">
-                <h2>{project.title}</h2>
+                <h1>{project.title}</h1>
 
                 {project.tags && (
                     <ul className="project-tags">

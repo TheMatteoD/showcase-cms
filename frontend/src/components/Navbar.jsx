@@ -8,7 +8,7 @@ export default function Navbar() {
           <nav className="navigation_bar">
             <div href="#" className="navigation_container">
               <div className="navigation_logo">
-                <h2>MD</h2>
+                <h1>MD</h1>
               </div>
             </div>
 

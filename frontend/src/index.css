@@ -20,13 +20,13 @@ body {
 }
 
 /* Typography */
-h1, h2 {
+h1{
   font-family: "Kode Mono", monospace;
   color: var(--accent);
   margin-bottom: 0.5em;
 }
 
-h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   font-family: "Kode Mono", monospace;
   color: var(--secondary);
   margin-bottom: 0.5em;
