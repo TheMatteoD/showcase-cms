@@ -192,32 +192,54 @@ a:hover {
 
 /* Project Card | started from a Uiverse.io component : Copyright - 2025 alexruix (Alex Ruiz) https://uiverse.io/alexruix/heavy-elephant-39 */ 
 .project-card {
- --background: linear-gradient(to left, var(--secondary) 0%, var(--primary) 100%);
- min-width: 33%;
- margin-top: 20rem;
- padding: 5px;
- border-radius: 1rem;
- overflow: visible;
- background: var(--primary);
- background: var(--background);
- position: relative;
- z-index: 1;
+  --background: linear-gradient(to left, var(--secondary) 0%, var(--primary) 100%);
+  width: clamp(250px, 30vw, 400px);
+  margin-top: 10rem;
+  padding: 5px;
+  border-radius: 1rem;
+  overflow: visible;
+  background: var(--background);
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
 }
 
 .project-card-info {
- --color: #181818;
- background: var(--color);
- color: var(--text);
- display: flex;
- justify-content: center;
- align-items: center;
- width: 100%;
- height: 100%;
- overflow: visible;
- border-radius: 2rem;
+  --color: #181818;
+  box-sizing: border-box; 
+  background: var(--color);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  border-radius: 2rem;
+  gap: 1rem;
+  padding: 2rem;
 }
 
-.pront-card h2 {
+.project-tags{
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-tags li {
+  background-color: var(--secondary);
+  color: var(--text);
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-family: "Kode Mono", monospace;
+}
+
+.project-card h2 {
  font-weight: bold;
  letter-spacing: .1em;
 }
