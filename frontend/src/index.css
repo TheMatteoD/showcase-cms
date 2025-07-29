@@ -194,7 +194,6 @@ a:hover {
 .project-card {
   --background: linear-gradient(to left, var(--secondary) 0%, var(--primary) 100%);
   width: clamp(250px, 30vw, 400px);
-  margin-top: 10rem;
   padding: 5px;
   border-radius: 1rem;
   overflow: visible;
@@ -250,6 +249,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   gap: 2em;
+  min-height: 800px;
 }
 
 .arrow-button {
