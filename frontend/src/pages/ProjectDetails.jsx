@@ -46,10 +46,10 @@ export default function ProjectDetails() {
                 </div>
             </div>
 
-            <div className="project-description">
+            {/* <div className="project-description">
                 <h3>Description</h3>
                 <p>{project.description}</p>
-            </div>
+            </div> */}
         </div>
     );
 }
