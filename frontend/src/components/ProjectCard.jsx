@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function ProjectCard({ project }) {
     if (!project) return null;
 
@@ -14,7 +16,9 @@ export default function ProjectCard({ project }) {
                     </ul>
                     )}
 
-                <p>{project.description}</p>
+                <p>{project.short_description}</p>
+
+                <Link className="archive-list" to={`/archive/${project.id}`}>Learn More...</Link>
             </div>
         </div>
     );
