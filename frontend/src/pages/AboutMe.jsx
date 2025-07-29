@@ -13,12 +13,13 @@ export default function AboutMe() {
   if (!info) return <p>Loading...</p>;
 
   return (
-      <>
-        <img className="profile_photo" src={`/${info.image_location}`} alt="Profile" />
+      <div className="about-me-container">
+        <div className="about-me-top">
+          <img className="profile_photo" src={`/${info.image_location}`} alt="Profile" />
 
-        <h2>{info.name}</h2>
-
-        <p>{info.bio}</p>
-      </>  
+          <h2 className="about-me-name">{info.name}</h2>
+        </div>
+          <p className="about-me-bio">{info.bio}</p>
+      </ div>  
     );
 }
