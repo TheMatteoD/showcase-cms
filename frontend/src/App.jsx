@@ -13,12 +13,12 @@ function App() {
         <Navbar />
 
         <Routes>
-          <Route path="/" element={<Showcase/>} />
+          <Route path="/" element={<AboutMe/>} />
           
           <Route path="/archive" element={<Archive />}/>
           <Route path="/archive/:projectId" element={<ProjectDetails />} />
 
-          <Route path="/about-me" element={<AboutMe />} />
+          <Route path="/showcase" element={<Showcase />} />
         </Routes>
 
         <footer className="app-footer">

@@ -37,8 +37,8 @@ export default function Navbar() {
 
             <ul className="navigation_list">
               <Link to="/archive" className="navigation_link">Archive</Link>
-              <Link to="/" className="navigation_link">Showcase</Link>
-              <Link to="/about-me" className="navigation_link">About Me</Link>
+              <Link to="/showcase" className="navigation_link">Showcase</Link>
+              <Link to="/" className="navigation_link">About Me</Link>
             </ul>
           </nav>
         </div>
