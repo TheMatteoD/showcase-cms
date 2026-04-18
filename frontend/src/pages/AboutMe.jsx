@@ -17,8 +17,10 @@ export default function AboutMe() {
         <div className="about-me-top">
           <img className="profile_photo" src={`/${info.image_location}`} alt="Profile" />
 
-          <h2 className="about-me-name">{info.name}</h2>
-          <h2 className="about-me-name">{info.title}</h2>
+          <div>
+            <h2 className="about-me-name">{info.name}</h2>
+            <h2 className="about-me-title">{info.title}</h2>
+          </div>
         </div>
           <p className="about-me-bio">{info.bio}</p>
       </ div>  
