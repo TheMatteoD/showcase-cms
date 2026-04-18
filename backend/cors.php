@@ -6,12 +6,16 @@
         $dotenv->load();
     }
 
-    // Read from the environment (captures both local .env and system variables)
-    $allowedOrigin = $_ENV['ALLOWED_ORIGINS'] ?? getenv('ALLOWED_ORIGINS') ?? '';
+    // Read ALLOWED_ORIGINS and split by comma into an array, trimming whitespace
+    $envOrigins = $_ENV['ALLOWED_ORIGINS'] ?? getenv('ALLOWED_ORIGINS') ?? '';
+    $allowedOriginsArray = array_map('trim', explode(',', $envOrigins));
 
-    // If an origin is specified, set the headers
-    if (!empty($allowedOrigin)) {
-        header("Access-Control-Allow-Origin: $allowedOrigin");
+    // Get the incoming request's Origin, if any
+    $requestOrigin = $_SERVER['HTTP_ORIGIN'] ?? '';
+
+    // If the request origin matches one of our allowed domains, grant exactly that origin
+    if (in_array($requestOrigin, $allowedOriginsArray)) {
+        header("Access-Control-Allow-Origin: $requestOrigin");
         header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
         header("Access-Control-Allow-Headers: Content-Type, Authorization");
     }
