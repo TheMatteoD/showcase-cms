@@ -1,8 +1,9 @@
 {
-  "name": "Placeholder Name",
-  "title": "Placeholder Title",
-  "bio": "Placeholder description for the about me section.",
-  "email": "placeholder@example.com",
-  "github": "https://github.com/placeholder",
-  "linkedin": "https://linkedin.com/in/placeholder"
+  "name": "Matteo DeSimone",
+  "title": "Analytics Engineer & Software Engineer",
+  "bio": "BIO",
+  "email": "[EMAIL_ADDRESS]",
+  "github": "https://github.com/TheMatteoD",
+  "linkedin": "https://linkedin.com/in/matteodesimone1",
+  "image_location": "assets/profile_pic.png"
 }
