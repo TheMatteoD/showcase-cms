@@ -22,7 +22,7 @@ function App() {
         </Routes>
 
         <footer className="app-footer">
-  | 2025 Matteo DeSimone | Built using React, PHP, & SQLite |
+  | 2026 Matteo DeSimone | Built using React, PHP, & SQLite |
         </footer>
 
       </Router>
