@@ -20,6 +20,8 @@ export default function AboutMe() {
           <div>
             <h2 className="about-me-name">{info.name}</h2>
             <h2 className="about-me-title">{info.title}</h2>
+            <a href={info.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href={info.github} target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </div>
           <p className="about-me-bio">{info.bio}</p>

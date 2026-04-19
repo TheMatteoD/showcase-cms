@@ -1,38 +1,43 @@
 [
     {
         "id": "1",
-        "title": "Project 1 - Mock data from API",
-        "description": "Project 1's description.",
+        "title": "Chess Opening Clustering",
+        "description": "I attempted using ",
         "image": null,
-        "tags": ["Python", "Flask", "React"]
+        "tags": ["Pytorch", "Scikit-learn", "Unsupervised Learning"]
         
     },
     {
         "id": "2",
-        "title": "Project 2 - Mock data from API",
-        "description": "Project 2's description",
+        "title": "clearpath",
+        "description": "clearpath.money is ",
         "image": null,
-        "tags": ["C#", ".Net", "Angular"]
+        "tags": ["Go", "React", "PostgreSQL"]
     },
     {
         "id": "3",
-        "title": "Project 3 - Mock data from API",
+        "title": "Apache Airflow",
         "description": "Project 3's description",
         "image": null,
-        "tags": null
+        "tags": ["Python", "DAGs", "ETL"]
     },
     {
         "id": "4",
-        "title": "Project 4 - Mock data from API",
+        "title": "Air BnB Price Prediction",
         "description": "Project 4's description",
         "image": null,
-        "tags": null
+        "tags": ["Python", "Scikit-learn", "Regression"]
     },
     {
         "id": "5",
-        "title": "Project 5 - Mock data from API",
+        "title": "Loan default Prediction",
         "description": "Project 5's description",
-        "image": null,
-        "tags": null
+        "image": null
+    },
+        {
+        "id": "6",
+        "title": "Data Warehouse Architecture",
+        "description": "Project 6's description",
+        "image": null
     }
 ]
