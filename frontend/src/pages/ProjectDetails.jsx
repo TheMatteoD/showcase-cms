@@ -20,10 +20,10 @@ export default function ProjectDetails() {
         <div className="page-container">
             <h1>{project.title}</h1>
 
-            {project.github_link && (
+            {project.link && (
                 <p>
-                    <a href={project.github_link} target="_blank" rel="noopener noreferrer">
-                        {project.github_link}
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                        {project.link}
                     </a>
                 </p>
             )}
@@ -46,10 +46,12 @@ export default function ProjectDetails() {
                 </div>
             </div>
 
-            {/* <div className="project-description">
-                <h3>Description</h3>
-                <p>{project.description}</p>
-            </div> */}
+            {project.description && (
+                <div className="project-description">
+                    <h3>Description</h3>
+                    <p>{project.description}</p>
+                </div>
+            )}
         </div>
     );
 }

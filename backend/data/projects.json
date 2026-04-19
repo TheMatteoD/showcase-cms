@@ -1,8 +1,9 @@
 [
     {
         "id": "1",
-        "title": "Chess Opening Clustering",
-        "description": "I attempted using ",
+        "title": "Chess Opening Insights",
+        "short_description": "Unsupervised learning to cluster chess openings",
+        "description": "I attempted using unsupervised learning to cluster chess openings.",
         "image": null,
         "tags": ["Pytorch", "Scikit-learn", "Unsupervised Learning"]
         
@@ -10,34 +11,40 @@
     {
         "id": "2",
         "title": "clearpath",
-        "description": "clearpath.money is ",
+        "link": "https://clearpath.money",
+        "short_description": "A platform that provides a path for tackling debt.",
+        "description": "clearpath.money description",
         "image": null,
         "tags": ["Go", "React", "PostgreSQL"]
     },
     {
         "id": "3",
         "title": "Apache Airflow",
-        "description": "Project 3's description",
+        "short_description": "Project 3's short description",
+        "description": "Apache Airflow description",
         "image": null,
         "tags": ["Python", "DAGs", "ETL"]
     },
     {
         "id": "4",
         "title": "Air BnB Price Prediction",
-        "description": "Project 4's description",
+        "short_description": "Project 4's short description",
+        "description": "Air BnB Price Prediction description",
         "image": null,
         "tags": ["Python", "Scikit-learn", "Regression"]
     },
     {
         "id": "5",
         "title": "Loan default Prediction",
-        "description": "Project 5's description",
+        "short_description": "Project 5's short description",
+        "description": "Loan default Prediction description",
         "image": null
     },
         {
         "id": "6",
         "title": "Data Warehouse Architecture",
-        "description": "Project 6's description",
+        "short_description": "Project 6's short description",
+        "description": "Data Warehouse Architecture description",
         "image": null
     }
 ]
