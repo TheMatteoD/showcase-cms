@@ -22,7 +22,7 @@ export default function ProjectDetails() {
 
             {project.link && (
                 <p>
-                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    <a href={`https://${project.link}`} target="_blank" rel="noopener noreferrer">
                         {project.link}
                     </a>
                 </p>
